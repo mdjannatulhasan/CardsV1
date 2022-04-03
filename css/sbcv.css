@@ -1,0 +1,185 @@
+.our-team {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    background-color: #f7f5ec;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .our-team .picture {
+    display: inline-block;
+    height: 130px;
+    width: 130px;
+    margin-bottom: 20px;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .our-team .picture::before {
+    content: "";
+    width: 100%;
+    height: 0;
+    border-radius: 50%;
+    background-color: #1369ce;
+    position: absolute;
+    bottom: 135%;
+    right: 0;
+    left: 0;
+    opacity: 0.9;
+    transform: scale(3);
+    transition: all 0.3s linear 0s;
+  }
+  
+  .cards:hover .picture::before {
+    height: 100%;
+  }
+  
+  .our-team .picture::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #1369ce;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .our-team .picture img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: all 0.9s ease 0s;
+  }
+  
+  .cards:hover .picture img {
+    box-shadow: 0 0 0 14px #f7f5ec;
+    transform: scale(0.7);
+  }
+  
+  .our-team .title {
+    display: block;
+    font-size: 15px;
+    color: #4e5052;
+    text-transform: capitalize;
+  }
+  
+
+
+.cards{
+    position: relative;
+    overflow: hidden;
+}
+  .const-icons span{
+    margin: 10px;
+  }
+  .const-icons span, .info-view span, .social span a{
+    border: 1px solid #000000;
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .info-view {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    margin-top: 5px;
+    margin-right: 5px;
+    font-size: 13px;
+  }
+  .info-view span{
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+  }
+  .info-view .close{
+      display: none!important;
+  }
+  .cards .logo{
+    text-align: center;
+    margin-top: 10px;
+  }
+  .cards .logo img{
+      max-width: 100px;
+  }
+  .cards .social {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    background-color: #1369ce;
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    transition: all 0.5s ease 0s;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cards:hover .social {
+    bottom: 0;
+  }
+  
+  .cards .social .links {
+    display: inline-block;
+  }
+  
+  .cards .social .links a {
+    font-size: 17px;
+    margin: 10px;
+    color: white;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    border-color: #ffffff;
+  }
+  
+  .cards .social .links a:hover {
+    color: #1369ce;
+    background-color: #f7f5ec;
+  }
+
+
+  .flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-back {
+    transform: rotateY(180deg);
+  }
+  .flip-card-back .our-team .picture::before{
+      background-color: transparent;
+  }
+  .desc{
+      margin: 20px 10px 0;
+      max-height: 200px;
+      overflow-y: scroll;
+  }
