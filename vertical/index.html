@@ -22,12 +22,13 @@
             <!-- BEGIN: Build Card Here -->
 
             <div class="flip-card">
+                
+                <input type="radio" name="toggleBtn" id="open-view">
+                <label for="open-view" id="open-viewL" class=""><i class="fas fa-info"></i></label>
                 <div class="flip-card-inner" id="flipCard">
                     <div class="flip-card-front">
                         <div class="cards">
-                            <div class="info-view">
-                                <span id="open-view" class=""><i class="fas fa-info"></i></span>
-                            </div>
+                            
                             <div class="our-team">
                                 <div class="picture">
                                     <img class="img-fluid" src="../images/profile-1.png">
@@ -71,7 +72,10 @@
                     <div class="flip-card-back">
                         <div class="cards">
                             <div class="info-view">
-                                <span id="close-view"><i class="fal fa-times"></i></span>
+                                <div class="info-view">
+                                    <input type="radio" name="toggleBtn" id="close-view">
+                                    <label for="close-view" id="close-viewL" class=""><i class="fal fa-times"></i></label>
+                                </div>
                             </div>
                             <div class="our-team">
                                 <div class="picture">
