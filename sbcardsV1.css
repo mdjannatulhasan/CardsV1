@@ -1,18 +1,19 @@
-.sbc-flip-card {
+.flip-card {
     position: relative;
     font-family: 'Noto Sans', sans-serif;
 }
-.sbc-cards {
+.cards {
     position: relative;
+    /* overflow: hidden; */
     height: 350px;
     border-radius: 10px;
 }
 
-.sbc-const-icons span {
+.const-icons span {
     margin: 10px;
 }
 
-#sbc-open-viewL {
+#open-viewL {
     border: 1px solid #000000;
     border-radius: 50px;
     height: 50px;
@@ -23,9 +24,9 @@
     font-size: 25px;
 }
 
-.sbc-info-view,
-#sbc-open-viewL,
-#sbc-close-viewL {
+.info-view,
+#open-viewL,
+#close-viewL {
     position: absolute;
     top: 0;
     right: 0;
@@ -35,8 +36,8 @@
 }
 
 
-#sbc-open-viewL,
-#sbc-close-viewL {
+#open-viewL,
+#close-viewL {
     cursor: pointer;
     height: 20px;
     width: 20px;
@@ -49,39 +50,34 @@
     align-items: center;
 }
 
-#sbc-open-viewL {
+#open-viewL {
     margin: 15px;
 }
 
-.sbc-info-view .sbc-close {
+.info-view .close {
     display: none !important;
 }
 
-.sbc-our-team {
-    background-color: #ffffff;
+.our-team {
+    background-color: #f7f5ec;
     text-align: center;
+    /* overflow: hidden; */
     position: relative;
     border-radius: 10px;
     height: 350px;
 }
 
-
-.sbc-name, .sbc-title{
-    line-height: 1.3em;
-    padding: 5px 0;
+h3,
+h4 {
+    margin: 0;
 }
-.sbc-our-team .sbc-picture{
+.our-team .picture{
     background-size: cover;
-    background-color: #cfcfcf;
+    background-color: aquamarine;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-
 }
-.sbc-back.our-team .sbc-picture {
-        height:45px;
-}
-
-.sbc-our-team .sbc-picture .sbc-fallback_image{
+.our-team .picture .fallback_image{
     border-radius: 100px;
     height: 100px;
     width: 100px;
@@ -92,14 +88,13 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    /* overflow: hidden; */
     background: rgb(203, 203, 203);
     color: aliceblue;
     position: relative;
     bottom: -55px;
-    overflow: hidden;
 }
-
-.sbc-our-team .sbc-picture img{
+.our-team .picture img{
     margin-top: 55px;
     border-radius: 100px;
     height: 100px;
@@ -107,14 +102,9 @@
     border: 4px solid #ffffff;
     margin-bottom: -55px;
 }
-.sbc-our-team .sbc-team-content{
+.our-team .team-content{
     margin-top: 55px;
 }
-
-.sbc-back.sbc-our-team .sbc-team-content{
-    margin-top: 45px;
-}
-
 .text-20{
     font-size: 20px;
 }
@@ -128,7 +118,7 @@
     font-size: 14px;
 }
 
-.sbc-our-team .sbc-title {
+.our-team .title {
     display: block;
     font-size: 15px;
     color: #4e5052;
@@ -136,21 +126,21 @@
     font-weight: normal;
 }
 
-.sbc-cards .sbc-logo {
+.cards .logo {
     text-align: center;
     margin-top: 10px;
     padding: 10px 0 20px;
 }
 
-.sbc-cards .sbc-logo img {
+.cards .logo img {
     height: 60px;
 }
 
-.sbc-cards .sbc-social {
+.cards .social {
     width: 100%;
     padding: 4px 0 10px;
     margin: 0;
-    background-color: #ffffffed;
+    background-color: #ffffffce;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -162,15 +152,15 @@
     border-bottom-right-radius: 10px;
 }
 
-.sbc-cards:hover .sbc-social {
+.cards:hover .social {
     display: flex;
 }
 
-.sbc-cards .sbc-social .sbc-links {
+.cards .social .links {
     display: inline-block;
 }
 
-.sbc-cards .sbc-social .sbc-links a {
+.cards .social .links a {
     font-size: 16px;
     margin: 5px;
     transition: all 0.3s ease 0s;
@@ -184,24 +174,23 @@
     align-items: center;
 }
 
-
-.sbc-cards .sbc-social .sbc-links a:hover,
-.sbc-const-icons a:hover {
-    color: #e4e4e4;
-    background-color: #4e4e4e;
+.cards .social .links a:hover {
+    color: #1369ce;
+    background-color: #f7f5ec;
 }
 
 
-.sbc-flip-card {
+.flip-card {
     background-color: transparent;
     width: 200px;
     height: 350px;
-    border: 2px solid #f1f1f1;
+    border: 1px solid #f1f1f1;
     perspective: 1000px;
+    /* overflow: hidden; */
     border-radius: 10px;
 }
 
-.sbc-flip-card-inner {
+.flip-card-inner {
     position: relative;
     width: 100%;
     text-align: center;
@@ -210,8 +199,8 @@
 }
 
 
-.sbc-flip-card-front,
-.sbc-flip-card-back {
+.flip-card-front,
+.flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -219,51 +208,49 @@
     backface-visibility: hidden;
 }
 
-.sbc-flip-card-back {
+.flip-card-back {
     transform: rotateY(180deg);
 }
 
-.sbc-desc {
-    margin: -15px 2px 0 2px;
-    max-height: 230px;
+.desc {
+    margin: 5px 2px 0 2px;
+    max-height: 190px;
     overflow-y: scroll;
     font-size: 80%;
     scrollbar-width: thin;
 }
 
-.sbc-desc::-webkit-scrollbar {
+.desc::-webkit-scrollbar {
     width: 11px;
   }
 
 
-.sbc-desc::-webkit-scrollbar-track {
+.desc::-webkit-scrollbar-track {
     background: #efefef;
   }
 
-.sbc-desc::-webkit-scrollbar-thumb {
+.desc::-webkit-scrollbar-thumb {
     background-color: #aaa;
     border-radius: 20px;
     border: 2px solid #efefef;
   }
-
-
-.sbc-desc p{
+.desc p{
     margin: 0;
 }
-#sbc-open-view:checked ~ #sbc-flipCard {
+#open-view:checked~#flipCard {
     transform: rotateY(180deg);
 }
 
-#sbc-open-view:checked+label {
+#open-view:checked+label {
     display: none;
 }
-.sbc-input-radio {
+input[type=radio] {
     display: none;
 }
-.sbc-const-icons{
+.const-icons{
     margin-top: 5px;
 }
-.sbc-const-icons a{
+.const-icons a{
     border:1px solid #333;
     color: #333;
     background-color: #ffffff;
@@ -277,13 +264,12 @@
     text-decoration: none;
     margin: 0 5px;
 }
-.sbc-flip-card-back .sbc-our-team .sbc-picture img{
+.flip-card-back .our-team .picture img{
     width: 70px;
     height: 70px;
     bottom: 0;
     margin-top: 10px;
 }
-.sbc-flip-card-back .sbc-our-team{
+.flip-card-back .our-team{
     background-color: #ffffff;
 }
-

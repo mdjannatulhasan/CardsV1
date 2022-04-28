@@ -1,0 +1,61 @@
+.sbcw .sbc-cards {
+    height: 145px;
+    overflow: hidden;
+}
+
+.sbcw .sbc-our-team {
+    height: 145px;
+}
+.sbcw.sbc-flip-card {
+    width: 365px;
+    height: 145px;
+
+}
+.sbcw .sbc-our-team .sbc-picture .sbc-fallback_image {
+    height: 80px;
+    width: 80px;
+    border: 3px solid rgb(255, 255, 255);
+    margin-left: 20px;
+    font-size: 60px;
+    bottom: -17px;
+    overflow: hidden;
+}
+.sbcw .sbc-cards .sbc-social {
+    bottom: unset;
+    left: 0;
+    top: 0;
+}
+.sbcw .sbc-picture{
+    display: flex;
+    align-items: flex-end;
+}
+.sbcw-name{
+    flex-grow: 1;
+    text-align: left;
+    padding-left: 15px;
+    padding-bottom: 8px;
+}
+.sbcw-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3px;
+    padding: 0 8px;
+}
+.sbcw-body .sbc-logo{
+    padding: unset;
+    margin: unset;
+}
+.sbcw .sbc-desc{
+    margin-top: 15px;
+    padding: 0 10px;
+}
+.sbcw .sbc-const-icons a {
+    height: 42px;
+    width: 42px;
+    margin: unset;
+}
+.sbcw .sbc-cards .sbc-social .sbc-links a {
+    height: 41px;
+    width: 41px;
+}

@@ -1,0 +1,111 @@
+
+<div class="sbc-flip-card">
+    <input type="radio" name="toggleBtn" id="sbc-open-view" class="sbc-input-radio">
+    <label for="open-view" id="sbc-open-viewL" class=""><i class="fas fa-info"></i></label>
+    <div class="sbc-flip-card-inner" id="sbc-flipCard">
+        <div class="sbc-flip-card-front">
+            <div class="sbc-cards">
+
+                <div class="sbc-our-team">
+                    <div class="sbc-picture" @if($headerImageUrl) style="background-image: url('../images/header.jpg');" @endif >
+                        @if($profileImageUrl)
+                        <img class="sbc-img-fluid" src="{{$profileImageUrl}}">
+                        @else
+                        <span class="sbc-fallback_image"><i class="fas fa-user"> </i></span>
+                        @endif
+                    </div>
+                    <div class="sbc-team-content">
+                        <h3 class="sbc-name text-20">{{$firstname}} {{$lastname}}</h3>
+                        <h4 class="sbc-title text-14">{{$title}}</h4>
+                    </div>
+                    <div class="sbc-const-icons">
+                        @if($email )
+                        <a href="mailto:{{$email}}" target="_blank"><i class="fal fa-at"></i></a>
+                        @endif
+                        @if($mobile )
+                        <a href="tel:{{$mobile}}" target="_blank" title="Call Mobile Now"><i class="fal fa-phone-alt"></i></a>
+                        <a href="sms:{{$mobile}}" target="_blank" title="Send Text Message"><i class="fal fa-comment-dots"></i></a>
+                        @endif
+                        @if($website)
+                        <a href="{{$website}}" target="_blank" title="Website"><i class="fal fa-home"></i></a>
+                        @endif
+                    </div>
+                    <div class="sbc-logo">
+                    @if($logoImageUrl)
+                        <img src="{{$logoImageUrl}}" alt="">
+                    @else
+                        <h4>{{$companyName}}</h4>
+                    @endif
+                    </div>
+                </div>
+
+                <div class="sbc-social">
+                    @if($facebook)
+                    <span class="sbc-links">
+                        <a href="{{$facebook}}" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    </span>
+                    @endif
+                    @if($instagram)
+                    <span class="sbc-links">
+                        <a href="{{$instagram}}" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </span>
+                    @endif
+                    @if($twitter)
+                    <span class="sbc-links">
+                        <a href="{{$twitter}}" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </span>
+                    @endif
+                    @if($linkedin)
+                    <span class="sbc-links">
+                        <a href="{{$linkedin}}" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </span>
+                    @endif
+                    @if($snapchat)
+                    <span class="sbc-links">
+                        <a href="{{$snapchat}}" target="_blank"><i class="fab fa-snapchat-ghost"></i></a>
+                    </span>
+                    @endif
+                    @if($whatsapp)
+                    <span class="sbc-links">
+                        <a href="{{$whatsapp}}" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </span>
+                    @endif
+                    @if($wechat)
+                    <span class="sbc-links">
+                        <a href="{{$wechat}}" target="_blank"><i class="fab fa-weixin"></i></a>
+                    </span>
+                    @endif
+
+                </div>
+            </div>
+        </div>
+        <div class="sbc-flip-card-back">
+            <div class="sbc-cards">
+                <div class="sbc-info-view">
+                    <div class="sbc-info-view">
+                        <input type="radio" name="toggleBtn" id="sbc-close-view" class="sbc-input-radio">
+                        <label for="close-view" id="sbc-close-viewL" class=""><i
+                                class="fal fa-times"></i></label>
+                    </div>
+                </div>
+                <div class="sbc-our-team">
+                    <div class="sbc-picture"  >
+                        @if($profileImageUrl)
+                        <img class="sbc-img-fluid" src="{{$profileImageUrl}}">
+                        @else
+                        <span class="sbc-fallback_image"><i class="fas fa-user"> </i></span>
+                        @endif
+                    </div>
+
+                    <div class="sbc-team-content">
+                        <h5 class="sbc-name">{{$firstname}} {{$lastname}}</h3>
+                    </div>
+                    <div class="sbc-desc">
+                        <p>{{$about}}</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
