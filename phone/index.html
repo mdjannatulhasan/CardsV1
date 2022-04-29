@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
+    <title>SB Cards - Phone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../fonts/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="../sbcards.css" />
+</head>
+
+
+<body>
+    <!-- <div style="height:100vh; width:100vw; padding-top: 40%;beige padding-left: 40%;">-->
+    <div>
+        <div style="width:365px; height: 145px; background-color: '';">
+            <!-- BEGIN: Build Card Here -->
+            <div class="sbc-flip-card sbcw sbcp">
+                <input type="radio" name="toggleBtn" id="sbc-open-view" class="sbc-input-radio">
+                <label for="sbc-open-view" id="sbc-open-viewL" class=""><i class="fas fa-info"></i></label>
+                <div class="sbc-flip-card-inner" id="sbc-flipCard">
+                    <div class="sbc-flip-card-front">
+                        <div class="sbc-cards">
+
+                            <div class="sbc-our-team">
+                                <div class="sbc-picture" style="background-image: url($headerImageUrl);">
+                                    <!-- <img class="sbc-img-fluid" src="{{$profileImageUrl}}">-->
+                                    <span class="sbc-fallback_image"><i class="fas fa-user"> </i></span>
+                                    <div class="sbcw-name">
+                                        <div class="sbc-name text-14">{{$firstname}} {{$lastname}}</div>
+                                        <div class="sbc-title text-14">{{$title}}</div>
+                                    </div>
+                                </div>
+                                <div class="sbcw-body">
+                                    <div class="sbc-logo">
+                                        <!-- <img src="{{$logoImageUrl}}" alt=""> -->
+                                        <span>{{$companyName}}</span>
+                                    </div>
+                                    <div>
+                                        <div class="sbc-const-icons">
+                                            <a href="mailto:{{$email}}" target="_blank"><i class="fal fa-at"></i></a>
+                                            <a href="tel:{{$mobile}}" target="_blank" title="Call Mobile Now"><i
+                                                    class="fal fa-phone-alt"></i></a>
+                                            <a href="sms:{{$mobile}}" target="_blank" title="Send Text Message"><i
+                                                    class="fal fa-comment-dots"></i></a>
+                                            <a href="{{$website}}" target="_blank" title="Website"><i
+                                                    class="fal fa-home"></i></a>
+                                        </div>
+                                        <div class="awards">
+                                            <!-- <img src="{{$logoImageUrl}}" alt=""> -->
+                                            <img src="../images/logo-1.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sbc-social">
+                                <span class="sbc-links">
+                                    <a href="{{$facebook}}" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                </span>
+                                <span class="sbc-links">
+                                    <a href="{{$instagram}}" target="_blank"><i class="fab fa-instagram"></i></a>
+                                </span>
+                                <span class="sbc-links">
+                                    <a href="{{$twitter}}" target="_blank"><i class="fab fa-twitter"></i></a>
+                                </span>
+                                <span class="sbc-links">
+                                    <a href="{{$linkedin}}" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                </span>
+                                <span class="sbc-links">
+                                    <a href="{{$snapchat}}" target="_blank"><i class="fab fa-snapchat-ghost"></i></a>
+                                </span>
+                                <span class="sbc-links">
+                                    <a href="{{$whatsapp}}" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                                </span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sbc-flip-card-back">
+                        <div class="sbc-cards">
+                            <div class="sbc-info-view">
+                                <div class="sbc-info-view">
+                                    <input type="radio" name="toggleBtn" id="sbc-close-view" class="sbc-input-radio">
+                                    <label for="sbc-close-view" id="sbc-close-viewL" class=""><i
+                                            class="fal fa-times"></i></label>
+                                </div>
+                            </div>
+                            <div class="sbc-our-team">
+                                <div class="sbc-picture" style="background-image: url($headerImageUrl);">
+                                    <!-- <img class="sbc-img-fluid" src="{{$profileImageUrl}}">-->
+                                    <span class="sbc-fallback_image"><i class="fas fa-user"> </i></span>
+                                    <div class="sbcw-name">
+                                        <div class="sbc-name text-14">{{$firstname}} {{$lastname}}</div>
+                                        <div class="sbc-title text-14">{{$title}}</div>
+                                    </div>
+                                </div>
+                                <div class="sbc-desc">
+                                    <p>{{$about}}</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END: End Card Here-->
+        </div>
+    </div>
+</body>
